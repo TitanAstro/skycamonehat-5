@@ -27,3 +27,4 @@ for S in core sdram_c sdram_i sdram_p ; do printf '%9s %s\n' "$S" "$(vcgencmd me
 echo "Temperature: $(vcgencmd measure_temp)"
 
 grep -a -e "hwmon" /var/log/syslog
+
